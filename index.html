@@ -4,26 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>curso de html</title>
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
   <header>
     <nav>
-      <p>Setup</p>
-       <ol>
-         <li>Google chrome</li>
-         <li>Visual Studio Code</li>
-         <li>Figma</li>
-         <li>Github</li>
-       </ol>
-      <p>Conceptos Ensenciales del Desarrollo Web</p>
-       <ol>
-         <li>Qué es HTML</li>
-         <li>Etiquetas</li>
-         <li>DOM</li>
-         <li>Semántica</li>
-         <li>Atributos</li>
-         <li>Qué es CSS</li>
-       </ol>
+      <details open>
+        <summary>
+          Setup
+        </summary>
+        <ol>
+          <li><a href="#google_chrome">Google chrome</a></li>
+          <li><a href="#vsc">Visual Studio Code</a></li>
+          <li><a href="#figma">Figma</a></li>
+          <li><a href="#githug">Github</a></li>
+        </ol>
+      </details>
+      
+       <details open>
+         <summary>
+          Conceptos Ensenciales del Desarrollo Web
+         </summary>
+         <ol>
+          <li> <a href="#html">Qué es HTML</a></li>
+          <li><a href="#etiquetas">Etiquetas</a></li>
+          <li><a href="#dom">DOM</a></li>
+          <li><a href="#semantica">Semántica</a></li>
+          <li><a href="#atributos">Atributos</a></li>
+          <li><a href="#css">Qué es CSS</a></li>
+        </ol>
+       </details>
+      
+       
     </nav>
   </header>
   <main>
@@ -38,7 +50,7 @@
      </section>
      <section class="setup">
        <h2>SETUP</h2>
-       <article class="google_chrome">
+       <article class="google_chrome" id="google_chrome">
          <img src="./iconos/google_chrome.png" alt="logo de google" title="logo de google" />
         <h3>Google Chrome</h3>
          <p>
@@ -47,7 +59,7 @@
           avanzadas y de amigable uso.
          </p>
        </article>
-       <article class="visual_estudio">
+       <article class="visual_estudio" id="vsc">
          <img
            src="./iconos/visual_studio_code.png" alt="logo de visual estudio" title="logo de visual estudio" />
 
@@ -60,7 +72,7 @@
           programador sin importar el lenguaje en el que se desemvuelva.
          </p>
        </article>
-       <article class="figma">
+       <article class="figma" id="figma">
          <img src="./iconos/figma.png" alt="logo de figma" title="logo de figma" />
         <h3>Figma</h3>
 
@@ -70,7 +82,7 @@
           porque puede ser usado directamente desde el navegador.
          </p>
        </article>
-       <article class="github">
+       <article class="github" id="githug">
          <img src="./iconos/github.png" alt="logo de github" title="logo de github" />
          <h3>Github</h3>
          <p>
@@ -84,7 +96,7 @@
      </section>
      <section class="conceptos_ensenciales">
        <h2>Conceptos esenciales del Desarrollo Web</h2>
-       <article class="html">
+       <article class="html" id="html">
          <h3>Qué es HTML</h3>
          <p>
           Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el
@@ -93,7 +105,7 @@
          </p>
          <img src="./imagenes/html.png" alt="imagen doctype" />
        </article>
-       <article class="etiquetas">
+       <article class="etiquetas" id="etiquetas">
          <h3>Etiquetas</h3>
          <p>
           Las etiquetas HTML van a ayudarnos a brindar una estructura y
@@ -110,7 +122,7 @@
           como Software Developer.
          </p>
        </article>
-       <article class="dom">
+       <article class="dom" id="dom">
          <h3>DOM</h3>
          <p>
           El Document Object Model es una estructura de árbol que representará
@@ -121,7 +133,7 @@
          </p>
          <img src="./imagenes/dom.png" alt="Estructura de árbol que representa al Document Object Model" title="Estructura de árbol que representa al Document Object Model" />
        </article>
-       <article class="semantica">
+       <article class="semantica" id="semantica">
         <h3>Semántica</h3>
          <p>
           La semántica le brinda sentido a cada elemento existen en un sitio
@@ -135,12 +147,12 @@
           habilidades diferentes puedan entender cada contenido.
          </p>
        </article>
-       <article class="atributos">
+       <article class="atributos" id="atributos">
          <h3>atributos</h3>
          <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador,
         algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src</p>
        </article>
-       <article class="CSS">
+       <article class="CSS" id="css">
        <h3>CSS</h3>
         <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML</p>
         <img src="./imagenes/css.png" alt="css">
@@ -198,13 +210,12 @@
           padding-block-end | padding-inline-start | padding-inline-end
          </li>
        </ul>
+       <p>
+        Si tienes alguna pregunta escríbeme a 
+       <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
+      </p>
      </section>
-
-  </main>
-  <footer>
      <section>
-        <p>Si tienes alguna pregunta escríbeme a me@leonidasesteban.com</p>
-    
         <h3>Suscríbete a nuestro newsletter</h3>
       <form action="">
         <label for="nombre">
@@ -216,6 +227,6 @@
         <input type="submit" value="Suscribirme"/>
       </form>
      </section>
-  </footer>
+  </main>
  </body>
 </html>
